@@ -1,0 +1,23 @@
+// main
+.main {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+    align-items: center;
+    justify-content: center;
+    
+    &__img {
+        max-width: 200px;
+    }
+
+    &__h1 {
+        text-align: center;
+        font-size: 36px;
+    }
+    
+    a {
+        color: #e9b440;
+    }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "bem-project-template",
+  "version": "0.0.1",
+  "description": "A template for a quick start.",
+  "keywords": [
+    "bem-project-template",
+    "bem",
+    "project",
+    "template",
+    "frontend",
+    "gulp",
+    "jade",
+    "sass"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergeypriakhin/my-project-template"
+  },
+  "author": "Sergey Priakhin <sergey.priakhin@gmail.com> (https://github.com/sergeypriakhin)",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "~2.0.0",
+    "gulp-browserify": "~0.5.0",
+    "gulp-cached": "^1.1.0",
+    "gulp-connect": "~2.2.0",
+    "gulp-csso": "~0.2.9",
+    "gulp-jade": "~0.10.0",
+    "gulp-load-plugins": "~0.8.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-sass-lint": "^1.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "~1.0.2",
+    "jade-get-data": "^1.0.0",
+    "require-dir": "^0.3.0",
+    "sass-glob-importer": "^1.0.1"
+  }
+}
