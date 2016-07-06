@@ -16,7 +16,7 @@ npm i
 
 ### Запусти шаблон
 ```
-gulp server
+gulp
 ```
 
 

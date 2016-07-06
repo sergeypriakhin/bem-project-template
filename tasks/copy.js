@@ -1,8 +1,8 @@
-var gulp = require('gulp'),
-	$ = require('gulp-load-plugins')(); 
+import gulp from 'gulp';
+import connect from 'gulp-connect'; 
 
-gulp.task('copy', function() {
-	return gulp.src('app/public/**')
-	.pipe(gulp.dest('dist/assets'))
-	.pipe($.connect.reload()); // перезагрузка сервера
+gulp.task('copy', () => {
+	return gulp.src('app/public/fonts')
+	.pipe(gulp.dest('dist/assets/fonts'))
+	.pipe(connect.reload()); // перезагрузка сервера
 });

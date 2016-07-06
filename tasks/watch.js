@@ -1,7 +1,7 @@
-var gulp = require('gulp'),
-    $ = require('gulp-load-plugins')();
+import gulp from 'gulp';
 
-gulp.task('watch', ['templates', 'styles-sass', 'copy', 'scripts'], function() {
+
+gulp.task('watch', ['templates', 'styles-sass', 'copy', 'scripts', 'images'], () => {
 
   gulp.watch('app/pages/*.jade', ['templates']);
   gulp.watch('app/blocks/**/*.jade', ['templates']);
@@ -13,6 +13,10 @@ gulp.task('watch', ['templates', 'styles-sass', 'copy', 'scripts'], function() {
 
   gulp.watch('app/public/**/*', ['copy']);
 
-  gulp.watch('app/scripts/*.js', ['scripts']);
+  gulp.watch('app/scripts/*.js', () => {
+  	gulp.run('scripts');
+  });
+
+  gulp.watch('app/public/images/*', ['images']);
 
 });
